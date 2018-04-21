@@ -1,0 +1,11 @@
+<div style="text-align:center" >
+  <h1>
+    *QUOTES*
+  </h1>
+</div>
+<ul>
+  <li *ngFor='let quo of newQuote'>
+     {{quo.quote}} {{quo.author}} {{quo.upvote}} {{quo.downvote}} {{quo.date}}
+  </li>
+</ul>
+<app-quote-form></app-quote-form>
