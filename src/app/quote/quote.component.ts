@@ -7,7 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  counter:number= 0
+  counter:number= 1
   newQuote = [
     new Quote(this.counter++, 'If you can tell stories, create characters, devise incidents, and have sincerity and passion, it doesn’t matter a damn how you write.', 'Somerset', 90, 10,  new Date()),
     new Quote(this.counter++, 'To produce a mighty book, you must choose a mighty theme', 'Herman', 90, 2,  new Date()),

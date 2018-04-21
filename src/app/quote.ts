@@ -6,7 +6,6 @@ export class Quote {
     public downvote: number;
     public date:Date;
     constructor(id,quote, author, upvote, downvote,date){
-        
         this.quote = quote
         this.author = author
         this.upvote = upvote
