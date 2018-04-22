@@ -1,36 +1,38 @@
-<div class="container color-dark">
-<div class="container-form">
-  <div class="col">
-    <p>Add your Quote</p>
-  </div>
-  <div class="col">
-    <p>Your quotes count</p>
-  </div>
-  </div>
-    <div class="container color-light">
-      <p>Use tfhis form to add your Quotes:</p>
-    <form>
-      <div class="col-md">
-      <div class="form-group">
-        <label for="formGroupYourName">Name</label>
-        <input type="text" class="form-control" id="formYourNameInput" placeholder=" Name">
-      </div><br>
-      <div class="form-group">
-        <label for="formGroupDescription">Quote</label>
-        <input type="text" class="form-control" id="formDescriptionInput2" placeholder="Description">
-      </div><br>
-      <div class="form-group">
-        <label for="formGroupAuthor">Author</label>
-        <input type="text"  class="form-control" id="formAuthorInput2" placeholder="Author">
-      </div>
-      <br>
-      <button type="submit" class="btn btn-submit mb-2" [value]="btnSubmit">Submit</button>
-      <button >like</button>
-      <button >Dislike</button>
-      </div>
-      <div class="col-md">
-      
-
-    </form>
-  </div>
+<div class="container dark">
+      <p>Add Quotes</p>
+    
 </div>
+
+<div class="container light">
+  <p>Use this form to add your Quotes</p>
+
+  <form>
+    <div class="col-md-4">
+      <label for="Name">Name :</label>
+      <input type="name" class="form-control" name="name" placeholder="Name" [(ngModel)]="nameText"style=width:50%;>
+    </div><br>
+    <div class="col-md-4">
+      <label for="description">Quote :</label>
+       <input type="quote" class="form-control" name="quote" placeholder="Quote" [(ngModel)]="quoteText"style=width:50%;>
+    </div><br>
+    <div class="col-md-4">
+      <label for="Author">Author</label>
+      <input type="text" class="form-control" name="item" placeholder="Author" [(ngModel)]="authorText"style=width:50%;>
+    </div><br>
+      </form>
+      <button type="submit" class="btn-success" [value]="btnText" (click)="Submit">submit</button>
+      <button type="upvote" class="btn-info" [value]="btnText" (click)="Upvote">upvote</button>
+      <button type="downvote" class="btn-primary" [value]="btnText" (click)="Downvote">downvote</button>
+      
+</div><br><br>
+<div class="container last">
+  <p>Your Quotes:</p>
+    <button type="upvote" class="btn-info" [value]="btnText" (click)="upvote">upvote</button>
+    <button type="downvote" class="btn-primary" [value]="btnText" (click)="downvote">downvote</button>
+    <button type="delete" class="btn-danger" [value]="btnText" (click)="delete">delete</button>
+      
+</div>
+  <p class="life-container" *ngFor="let quote of quotes">
+    {{ quote }}
+  </p>
+

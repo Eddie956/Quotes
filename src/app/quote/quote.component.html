@@ -4,11 +4,12 @@
     *QUOTES*
   </h1>
 </div>
-<p>Challange! Inspiration quotes do you have?
+<p>Challange! __Inspiration quotes do you have?__
 </div>
 <app-quote-form (emitQuote)="publishQuote($event)"></app-quote-form>
 <ul>
-  <ol *ngFor='let quo of newQuote'>
-     {{quo.quote}} {{quo.publisher}} {{quo.quoteAuthor}} {{quo.upvote}} {{quo.downvote}} {{quo.myDate}}
-  </ol>
+ <div *ngFor='let quo of newQuote; let i = index'>
+    <li >{{quo.quote}} {{quo.publisher}} {{quo.quoteAuthor}} {{quo.upvote}} {{quo.downvote}} {{quo.myDate}}
+  </li>
+  </div>
 </ul>
