@@ -1,5 +1,16 @@
 li {
     font-size: 75%;
     text-decoration: antiquewhite;
+    }
+.container-jumbotron{
+    background-color:blue;
+    height:50%;
+    text-align: center;
+    padding-top:2%;
+    padding-bottom:2%;
+    font-style: italics;
     
+}
+h1{
+    font-size:4em;
 }

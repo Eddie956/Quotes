@@ -1,25 +1,36 @@
-<div class="container-fluid">
-  <div class="row">
+<div class="container color-dark">
+<div class="container-form">
+  <div class="col">
+    <p>Add your Quote</p>
+  </div>
+  <div class="col">
+    <p>Your quotes count</p>
+  </div>
+  </div>
+    <div class="container color-light">
+      <p>Use tfhis form to add your Quotes:</p>
     <form>
-      <div class="col-md-6">
+      <div class="col-md">
       <div class="form-group">
-
-        <label for="name">Name</label>
-        <input type="text" required class="form-control" id="name">
-
+        <label for="formGroupYourName">Name</label>
+        <input type="text" class="form-control" id="formYourNameInput" placeholder=" Name">
       </div><br>
       <div class="form-group">
-
-        <label for="description">Description</label>
-        <textarea class="form-control" id="description" rows="4" required></textarea>
-
+        <label for="formGroupDescription">Quote</label>
+        <input type="text" class="form-control" id="formDescriptionInput2" placeholder="Description">
       </div><br>
       <div class="form-group">
-        <label for="complete">Completion</label>
-        <input type='date' id="complete" required>
+        <label for="formGroupAuthor">Author</label>
+        <input type="text"  class="form-control" id="formAuthorInput2" placeholder="Author">
+      </div>
+      <br>
+      <button type="submit" class="btn btn-submit mb-2" [value]="btnSubmit">Submit</button>
+      <button >like</button>
+      <button >Dislike</button>
+      </div>
+      <div class="col-md">
+      
 
-      </div>
-      </div>
     </form>
   </div>
 </div>

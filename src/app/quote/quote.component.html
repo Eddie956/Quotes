@@ -1,11 +1,14 @@
+<div class="container-jumbotron">
 <div style="text-align:center" >
   <h1>
     *QUOTES*
   </h1>
 </div>
+<p>Challange! Inspiration quotes do you have?
+</div>
+<app-quote-form (emitQuote)="publishQuote($event)"></app-quote-form>
 <ul>
-  <li *ngFor='let quo of newQuote'>
-     {{quo.quote}} {{quo.author}} {{quo.upvote}} {{quo.downvote}} {{quo.date}}
-  </li>
+  <ol *ngFor='let quo of newQuote'>
+     {{quo.quote}} {{quo.publisher}} {{quo.quoteAuthor}} {{quo.upvote}} {{quo.downvote}} {{quo.myDate}}
+  </ol>
 </ul>
-<app-quote-form></app-quote-form>
