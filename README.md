@@ -1,4 +1,4 @@
-###
+
 # MY QUOTES
 This is a web page that rates each and every individual what kind of quotes that he can  give and impress the people.If a person writes a quote he or she may delete it and he may upvote it or downvote and his friiends or any other person who enetes the webpage may upvote it or downvote but only the one who wrote the quote can delete his quote, it is a way of inspiring people who have lost hope in life, Version was designed on 20/04/2018
 #### By **{Eddie}**
