@@ -8,8 +8,10 @@
 </div>
 <app-quote-form (emitQuote)="publishQuote($event)"></app-quote-form>
 <ul>
- <div *ngFor='let quo of newQuote; let i = index'>
-    <li >{{quo.quote}} {{quo.publisher}} {{quo.quoteAuthor}} {{quo.upvote}} {{quo.downvote}} {{quo.myDate}}
-  </li>
+ <div *ngFor='let quote of quotes; let i = index'>
+   <app-quote-details [quote]="quote"></app-quote-details>
+    <button class="btn-info" [value]="btnText" (click)="upvote(i)">upvote</button>
+    <button class="btn-primary" [value]="btnText" (click)="downvote(i)">downvote</button>
+    <button class="btn-danger" [value]="btnText" (click)="delete(i)">delete</button>
   </div>
 </ul>
